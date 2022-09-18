@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="bars">
+    <input type="checkbox" name="" id="checkboxclosebtn">
+    <div class="side-bar">
+        <label for="checkboxclosebtn"><i class="fa fa-xmark" id="closebtn"></i></label>
+        <div class="side-bar-item">
+            <div class="brands">
+                <i class="fa fa-biohazard"></i>
+                <span>brands</span>
+            </div>
+            <ul>
+                <li><a href=""><i class="fa fa-home"></i> <span>home</span></a></li>
+                <li><a href=""><i class="fa fa-truck"></i> <span>order</span></a></li>
+                <li><a href=""><i class="fa fa-gear"></i> <span>account</span></a></li>
+                <li class="submenu">
+                    <a href="" class="submenu-item">
+                        <i class="fa fa-gears"></i>
+                        <span>settings</span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href=""><span>Password change</span></a>
+                        <a href=""><span>Language</span></a>
+                    </div>
+                <li class="submenu">
+                    <a href="" class="submenu-item">
+                        <i class="fa fa-list"></i>
+                        <span>category</span>
+                    </a>
+
+                    <div class="sub-menu">
+                        <a href=""><span> mens</span></a>
+                        <a href=""><span>women</span> </a>
+                        <a href=""><span>girls</span> </a>
+                        <a href=""><span>boys</span> </a>
+                        <a href=""><span>baby</span> </a>
+                        <a href=""><span>kids</span> </a>
+
+                    </div>
+                </li>
+                </li>
+                <li><a href=""><i class="fa fa-file-upload"></i> <span>logout</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <main>
+            <div class="logo">
+                <label for="bars"><i class="fa fa-bars"></i></label>
+                <span>dashboard</span>
+            </div>
+            <div class="input-box">
+                <input type="text" name="" id="" placeholder="search here">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="cart-item">
+                <i class="fa fa-bell"></i>
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+        </main>
+
+
+        <div class="category-wise-item">
+            <div class="card">
+                <div class="single-card">
+                    <div class="product-image-header">
+                        <img src="images/1.jpg" alt="product photo" class="mainphoto" onmousemove="mouseMove(event)">
+                    </div>
+                    <div class="product-image">
+                        <div class="product-image-title">
+                            <img src="images/2.jpg" alt="" onclick="changePhoto('images/2.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/3.jpg" alt="" onclick="changePhoto('images/3.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/4.jpg" alt="" onclick="changePhoto('images/4.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/7.jpg" alt="" onclick="changePhoto('images/7.jpg')" class="subphoto">
+                        </div>
+                    </div>
+                    <h1 class="product-name">pure cotton shirt</h1>
+                    <p class="price"><span class="discount-price">rs 254.00</span> <br> <span>75% descount</span>
+                        <br><span class="final-price">rs 578.00</span></p>
+                    <div class="buy-cart">
+                        <a href="" class="btn">cart</a>
+                        <a href="" class="btn">buy now</a>
+                    </div>
+                </div>
+                
+                <div class="single-card">
+                    <div class="product-image-header">
+                        <img src="images/1.jpg" alt="product photo" class="mainphoto">
+                    </div>
+                    <div class="product-image">
+                        <div class="product-image-title">
+                            <img src="images/2.jpg" alt="" onclick="changePhoto1('images/2.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/3.jpg" alt="" onclick="changePhoto1('images/3.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/4.jpg" alt="" onclick="changePhoto1('images/4.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/7.jpg" alt="" onclick="changePhoto1('images/7.jpg')" class="subphoto">
+                        </div>
+                    </div>
+                    <h1 class="product-name">pure cotton shirt</h1>
+                    <p class="price"><span class="discount-price">rs 254.00</span> <br> <span>75% descount</span>
+                        <br><span class="final-price">rs 578.00</span></p>
+                    <div class="buy-cart">
+                        <a href="" class="btn">cart</a>
+                        <a href="" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="single-card">
+                    <div class="product-image-header">
+                        <img src="images/1.jpg" alt="product photo" class="mainphoto">
+                    </div>
+                    <div class="product-image">
+                        <div class="product-image-title">
+                            <img src="images/2.jpg" alt="" onclick="changePhoto2('images/2.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/3.jpg" alt="" onclick="changePhoto2('images/3.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/4.jpg" alt="" onclick="changePhoto2('images/4.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/7.jpg" alt="" onclick="changePhoto2('images/7.jpg')" class="subphoto">
+                        </div>
+                    </div>
+                    <h1 class="product-name">pure cotton shirt</h1>
+                    <p class="price"><span class="discount-price">rs 254.00</span> <br> <span>75% descount</span>
+                        <br><span class="final-price">rs 578.00</span></p>
+                    <div class="buy-cart">
+                        <a href="" class="btn">cart</a>
+                        <a href="" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="single-card">
+                    <div class="product-image-header">
+                        <img src="images/1.jpg" alt="product photo" class="mainphoto">
+                    </div>
+                    <div class="product-image">
+                        <div class="product-image-title">
+                            <img src="images/2.jpg" alt="" onclick="changePhoto3('images/2.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/3.jpg" alt="" onclick="changePhoto3('images/3.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/4.jpg" alt="" onclick="changePhoto3('images/4.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/7.jpg" alt="" onclick="changePhoto3('images/7.jpg')" class="subphoto">
+                        </div>
+                    </div>
+                    <h1 class="product-name">pure cotton shirt</h1>
+                    <p class="price"><span class="discount-price">rs 254.00</span> <br> <span>75% descount</span>
+                        <br><span class="final-price">rs 578.00</span></p>
+                    <div class="buy-cart">
+                        <a href="" class="btn">cart</a>
+                        <a href="" class="btn">buy now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="single-card">
+                    <div class="product-image-header">
+                        <img src="images/1.jpg" alt="product photo" class="mainphoto">
+                    </div>
+                    <div class="product-image">
+                        <div class="product-image-title">
+                            <img src="images/2.jpg" alt="" onclick="changePhoto4('images/2.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/3.jpg" alt="" onclick="changePhoto4('images/3.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/4.jpg" alt="" onclick="changePhoto4('images/4.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/7.jpg" alt="" onclick="changePhoto4('images/7.jpg')" class="subphoto">
+                        </div>
+                    </div>
+                    <h1 class="product-name">pure cotton shirt</h1>
+                    <p class="price"><span class="discount-price">rs 254.00</span> <br> <span>75% descount</span>
+                        <br><span class="final-price">rs 578.00</span></p>
+                    <div class="buy-cart">
+                        <a href="" class="btn">cart</a>
+                        <a href="" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="single-card">
+                    <div class="product-image-header">
+                        <img src="images/1.jpg" alt="product photo" class="mainphoto">
+                    </div>
+                    <div class="product-image">
+                        <div class="product-image-title">
+                            <img src="images/2.jpg" alt="" onclick="changePhoto5('images/2.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/3.jpg" alt="" onclick="changePhoto5('images/3.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/4.jpg" alt="" onclick="changePhoto5('images/4.jpg')"  class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/7.jpg" alt="" onclick="changePhoto5('images/7.jpg')" class="subphoto">
+                        </div>
+                    </div>
+                    <h1 class="product-name">pure cotton shirt</h1>
+                    <p class="price"><span class="discount-price">rs 254.00</span> <br> <span>75% descount</span>
+                        <br><span class="final-price">rs 578.00</span></p>
+                    <div class="buy-cart">
+                        <a href="" class="btn">cart</a>
+                        <a href="" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="single-card">
+                    <div class="product-image-header">
+                        <img src="images/1.jpg" alt="product photo" class="mainphoto">
+                    </div>
+                    <div class="product-image">
+                        <div class="product-image-title">
+                            <img src="images/2.jpg" alt="" onclick="changePhoto6('images/2.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/3.jpg" alt="" onclick="changePhoto6('images/3.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/4.jpg" alt="" onclick="changePhoto6('images/4.jpg')"  class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/7.jpg" alt="" onclick="changePhoto6('images/7.jpg')" class="subphoto">
+                        </div>
+                    </div>
+                    <h1 class="product-name">pure cotton shirt</h1>
+                    <p class="price"><span class="discount-price">rs 254.00</span> <br> <span>75% descount</span>
+                        <br><span class="final-price">rs 578.00</span></p>
+                    <div class="buy-cart">
+                        <a href="" class="btn">cart</a>
+                        <a href="" class="btn">buy now</a>
+                    </div>
+
+                </div>
+                <div class="single-card">
+                    <div class="product-image-header">
+                        <img src="images/1.jpg" alt="product photo" class="mainphoto">
+                    </div>
+                    <div class="product-image">
+                        <div class="product-image-title">
+                            <img src="images/2.jpg" alt="" onclick="changePhoto7('images/2.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/3.jpg" alt="" onclick="changePhoto7('images/3.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/4.jpg" alt="" onclick="changePhoto7('images/4.jpg')" class="subphoto">
+                        </div>
+                        <div class="product-image-title">
+                            <img src="images/7.jpg" alt="" onclick="changePhoto7('images/7.jpg')" class="subphoto">
+                        </div>
+                    </div>
+                    <h1 class="product-name">pure cotton shirt</h1>
+                    <p class="price"><span class="discount-price">rs 254.00</span> <br> <span>75% descount</span>
+                        <br><span class="final-price">rs 578.00</span></p>
+                    <div class="buy-cart">
+                        <a href="" class="btn">cart</a>
+                        <a href="" class="btn">buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
