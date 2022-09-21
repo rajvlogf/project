@@ -1,0 +1,175 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background: #4dadb6;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper
+{
+    max-width: 325px;
+    width: 100%;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+.card
+{
+    width: 100%;
+    min-height: 320px;
+    background: linear-gradient(45deg, #203c42, #43a4ea);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.card-header
+{
+    display: flex;
+    justify-content: space-between;
+}
+.right, .left
+{
+    padding: 8px;
+    color: #fff;
+}
+.left b
+{
+    font-size: 10px;
+}
+.right i
+{
+    font-weight: bold;
+}
+.card-body
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.card-body .img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: relative;
+}
+.card-body .img img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+}
+.card-body h1
+{
+    text-transform: capitalize;
+    font-family: monospace;
+    font-size: 20px;
+    padding-top: 20px;
+    position: relative;
+    color: #f47640;
+}
+.card-body h1::before
+{
+    content: "mrs. ";
+}
+.card-body p
+{
+    color: #b5b5b5;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.icons span
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #43a4ea, #203c42, #43a4ea);
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+.icons span i
+{
+    line-height: 40px;
+    color: #fff;
+}
+.follow-btn
+{
+   max-width: 325px;
+   width: 100%;
+}
+.follow-btn button
+{
+   width: 150px;
+    height: 40px;
+   text-align: center;
+   line-height: 40px;
+   font-family: monospace;
+   text-transform: capitalize;
+   font-size: 18px;
+   font-weight: bold;
+   border-radius: 40px;
+   position: relative;
+   top: -20px;
+   margin-left: calc((100% - 150px)/2);
+   background: linear-gradient(150deg,  #43a4ea, #203c42);
+   box-shadow: 0 6px 5px rgb(0,0,0);
+}
+.wrapper .target
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.target h1
+{
+    padding: 0 15px;
+    text-align: center;
+    font-size: 15px;
+    color: #43a4ea;
+}
+.target h1 p
+{
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 100;
+    text-align: center;
+}
+.about h2
+{
+    text-align: center;
+    margin: 15px 0;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-family: monospace;
+}
+.about p
+{
+    text-align: center;
+    margin: 15px 0;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: monospace;
+    padding: 0 5px;
+}
