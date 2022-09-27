@@ -1,0 +1,492 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main
+{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: #7287AE;
+    overflow: hidden;
+}
+.main .wave
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+header
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 100px;
+}
+.logo
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.logo i
+{
+    font-size: 25px;
+    padding-right: 10px;
+}
+.logo span
+{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+nav ul
+{
+    display: flex;
+}
+nav ul li
+{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+.title
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.title h1
+{
+    text-transform: capitalize;
+    color: #fff;
+    font-family: arial;
+    font-size: 50px;
+}
+.desc
+{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.menu-card
+{
+    width: 100%;
+    min-height: 800px;
+    position: relative;
+    background: #E3ECC2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-card h1
+{
+    text-transform: capitalize;
+    color: #7287AE;
+}
+.card
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single-card
+{
+    width: 300px;
+    height: 340px;
+    background: #7287AE;
+    margin: 0 15px;
+    position: relative;
+    border-radius: 10px;
+    transition: transform 0.4s;
+}
+.single-card:hover
+{
+    transform: translateY(-10px);
+}
+.single-card img
+{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.card-body
+{
+    position: relative;
+    color: #fff;
+}
+.card-body h2
+{
+    padding: 5px;
+    text-transform: capitalize;
+}
+.card-body p
+{
+    padding: 5px;
+}
+.menu-card a
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #7287AE;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+/* .discount-order
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+} */
+.discount,
+.order
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background: #fff;
+    position: relative;
+}
+.discount .left img,
+.order .right img
+{
+    width: 100%;
+    height: 100%;
+}
+.discount .right,
+.order .left
+{
+    position: relative;
+    width: 500px;
+}
+.discount .right h1,
+.order .left h1
+{
+        text-transform: capitalize;
+        font-family: arial;
+        font-size: 30px;
+        padding-left: 25px;
+}
+.discount .right p,
+.order .left p
+{
+        text-transform: capitalize;
+        font-family: arial;
+        padding-left: 25px;
+}
+.discount .right a,
+.order .left a
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #7287AE;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+.process
+{
+    width: 100%;
+    background: #7287AE;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.process .title h1
+{
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 30px;
+    padding: 2em 0;
+}
+.process .card
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.process .single-card
+{
+    background: transparent;
+    position: relative;
+    margin-top: 50px;
+}
+.process .single-card:hover
+{
+    transform: translateY(0px);
+}
+.process .card-body
+{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.process .card-body .circle
+{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    display: block;
+    color: #7287AE;
+    text-align: center;
+    line-height: 80px;
+}
+.process .card-body h1
+{
+    text-transform: capitalize;
+    text-align: center;
+}
+.process .card-body p
+{
+    text-transform: capitalize;
+    text-align: center;
+}
+.delivery
+{
+    width: 100%;
+    height: 400px;
+    background-image: url("../image/d4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delivery .delivery-data
+{
+    width: 500px;
+    padding: 0 11px;
+}
+.delivery .delivery-data h1
+{
+    color: #7287AE;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.delivery .delivery-data p
+{
+    color: #7287AE;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.delivery .delivery-data a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: 600;
+    background: #7287AE;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+.waiter-details
+{
+    background: #DFE9C1;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.waiter-details .waves
+{
+    position: absolute;
+    top: 0;
+}
+.waiter-details
+{  
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.waiter-details .waiter-body
+{
+    width: 50em;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.waiter-details .waiter-body p
+{
+    text-align: center;
+    color: #7287AE;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.waiter-details .waiter-body h1
+{
+    text-align: center;
+    color: #7287AE;
+    font-size: 25px;
+    margin: 20px 0;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+
+}.waiter-details .waiter-body .following
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.waiter-details .waiter-body .following span
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #7287AE;
+    text-align: center;
+    display: block;
+    margin: 0 10px;
+}
+.waiter-details .waiter-body .following span i
+{
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+}
+.footer
+{
+    width: 100%;
+    position: relative;
+    background: #7287AE;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer div
+{
+    flex: 1;
+}
+.footer .about
+{
+    padding-left: 30px;
+}
+.footer .about h1
+{
+    text-transform: capitalize;
+    color: #fff;
+}
+.footer .about a
+{
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 2;
+    margin: 8px 0;
+}
+.footer .sub h1
+{
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.footer .sub .input-box
+{
+    height: 30px;
+    position: relative;
+    width: 80%;
+
+}
+.footer .sub .input-box input
+{
+    height: 30px;
+    position: relative;
+    width: 100%;
+    border: 2px solid #d5d9df;
+    background: transparent;
+    outline: none;
+    padding: 0 120px 0 10px;
+    font-weight: 600;
+    color: #fff;
+}
+.footer .sub .input-box button
+{
+    height: 30px;
+    position: absolute;
+    border: none;
+    outline: none;
+    width: 100px;
+    right: 0;
+    border: none;
+    outline: none;
+    background: #233961;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.footer .follow h1
+{
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer .follow span
+{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: inline-block;
+   background: #fff;
+   text-align: center;
+   margin: 0 5px;
+   cursor: pointer;
+}
+.footer .follow span i
+{
+    line-height: 40px;
+    color: #233961;
+    font-size: 20px;
+}
