@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <div class="image"><img src="images/avatar.png" alt="" srcset=""></div>
+            <div class="shadow-first"></div>
+            <div class="login-form-box">
+                <form action="" name="myForm">
+                    <div class="input-box">
+                        <input type="text" name="email" value="" id="email" required autocomplete="off">
+                        <label for="email"> Email Address </label>
+                        <p class="email-error"> </p>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="password" value="" id="password" required autocomplete="off" onkeyup="showHide()">
+                        <label for="password"> Password </label>
+                        <i class="fa fa-eye-slash" id="fa-eye-btn"></i>
+                        <p class="password-error"></p>
+                    </div>
+                    <div class="login-box">
+                        <button type="submit">login</button>
+                    </div>
+                </form>
+                <p class="account">don't have account  <a href="">signup</a></p>
+                <p class="forgot"><a href="">forgot password</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
