@@ -1,0 +1,648 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+img
+{
+    width: 100%;
+}
+:root
+{
+    --mainColor: #64bcf4;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #f1f8fc;
+    --darkOne: #312f3a;
+    --darkTwo: #45424b;
+    --lightOne: #919191;
+    --lightTwo: #aaa;
+    --coralColor: coral;
+    --whiteColor: #ffffff;
+}
+
+.angle
+{
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border-radius: 50%;
+    background: var(--darkOne);
+    text-align: center;
+    cursor: pointer;
+}
+.active
+{
+    display: block;
+}
+.angle i
+{
+    line-height: 50px;
+    font-size: 40px;
+    color: var(--whiteColor);
+}
+
+.wrapper
+{
+    width: 100%;
+    min-height: 100vh;
+    /* overflow: hidden; */
+    background: var(--backgroundColor);
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+header
+{
+   background: var(--mainColor);
+}
+.container
+{
+    max-width: 80rem;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    color: var(--whiteColor)
+}
+.logo span
+{
+    padding-left: 0.5rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold
+}
+#bar
+{
+    display: none;
+}
+label
+{
+    display: none;
+}
+nav ul
+{
+    display: flex;
+    align-items: center;
+    padding: 1.3rem 0;
+    /* display: none; */
+}
+nav ul li
+{
+    list-style: none;
+    margin: 0 1.1rem;
+}
+nav ul li a
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: monospace;
+    font-size: 1.09rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--whiteColor);
+}
+.content .container
+{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 2rem auto;
+}
+/* .content .container div
+{
+    flex: 1;
+} */
+
+.content .container .left-side h1
+{
+    text-transform: capitalize;
+    color: var(--mainColor);
+    line-height: 2;
+}
+.content .container .left-side p
+{
+    font-family: monospace;
+    text-transform: capitalize;
+    color: var(--lightOne);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    padding: 0 50px 0 0;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.content .container .left-side a
+{
+    width: 125px;
+    height: 50px;
+    display: inline-block;
+    text-transform: capitalize;
+    margin: 0 15px;
+    color: var(--mainColor);
+    font-weight: bold;
+    transition: all 0.4s;
+    text-align: center;
+    line-height: 50px;
+    background: var(--darkTwo);
+    color: var(--whiteColor);
+}
+.content .container .left-side a:hover
+{
+    color: var(--whiteColor);
+    box-shadow: inset 125px 0 0 0 var(--hoverColor);
+    border: none;
+}
+.right-side .image img
+{
+    border-radius: 5px;
+}
+
+/* Start Gallery CSS */
+.gallery
+{
+    margin: 3rem;
+}
+.gallery h1
+{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--mainColor);
+    padding: 2rem 0;
+}
+.gallery-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery-item
+{
+    width: 16rem;
+    height: 200px;
+    margin: 1rem auto;
+    position: relative;
+    overflow: hidden;
+}
+.gallery-item img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.gallery-item::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: rgba(255,255,255,0.7);
+    bottom: 0;
+    left: 0;
+    transition: height 0.4s;
+}
+.gallery-item:hover::after
+{
+    height: 100%;
+}
+
+
+/* End Gallery CSS */
+
+
+/* Start testomonials */
+
+.testomonials h1
+{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--mainColor);
+    font-size: 1.5rem;
+    font-family: monospace;
+    letter-spacing: 1.5px;
+    margin: 2rem auto;
+}
+.testomonials-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testomonials-card
+{
+    width: 26rem;
+    min-height: 20rem;
+    background: var(--darkTwo);
+    margin: 4rem 1rem;
+    border-radius: 5px;
+    transition: all 0.5s;
+    position: relative;
+}
+.testomonials-card:hover
+{
+    transform: translateY(-15px);
+    background: var(--lightTwo);
+    border-radius: 5px;
+}
+.shadow
+{
+    width: 100px;
+    height: 100px;
+    background: rgba(104, 191, 235, 0.746);
+    position: absolute;
+    clip-path: circle(50% at 0 0);
+    transition: 0.5s;
+}
+.testomonials-card:hover .shadow
+{
+    clip-path: circle(100% at 0 0);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 5px;
+}
+.testomonials-card .image
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 8px solid var(--backgroundColor);
+    top: -50px;
+    position: relative;
+    left: calc((100% - 100px)/2);
+}
+.testomonials-card .image img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;   
+}
+.testomonials-card .testomonials-card-body
+{
+    padding: 0 2rem;
+    text-align: justify;
+}
+.testomonials-card:hover > .testomonials-card-body p,
+.testomonials-card:hover > .testomonials-card-body p.name span
+{
+    color: var(--whiteColor);
+}
+.testomonials-card .testomonials-card-body p
+{
+    color: var(--mainColor);
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-size: 1.04rem;
+    padding: 0 0 2rem 0;
+}
+.testomonials-card .testomonials-card-body p.name
+{
+    font-size: 1.5rem;
+    color: var(--coralColor);
+    text-transform: capitalize;
+}
+.testomonials-card:hover > .testomonials-card-body p.name
+{
+    color: var(--darkOne);
+    z-index: 1;
+}
+.testomonials-card .testomonials-card-body p.name span
+{
+    font-size: 1rem;
+    color: var(--lightOne);
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+
+/* End testomonials */
+
+
+/* Start About CSS */
+.abouts h1
+{
+    text-align: center;
+    color: var(--mainColor);
+    font-family: monospace;
+    text-transform: capitalize;
+}
+.about-box
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 3rem auto;
+}
+.about-box .left-side h1
+{
+    text-align: left;
+    line-height: 2;
+    padding: 1rem 3rem;
+}
+
+.about-box .left-side p
+{
+    text-align: left;
+    padding: 2rem 3rem;
+    color: var(--lightOne);
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+.about-box .right-side .image
+{
+    height: 20rem;
+}
+.about-box .right-side .image img
+{
+    width: 100%;
+    height: 100%;
+}
+/* End About CSS */
+
+/* End contacts CSS */
+
+.contacts h1
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: monospace;
+    color: var(--mainColor);
+}
+
+.contact-box
+{
+    margin: 4rem auto;
+    max-width: 80rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.contact-box .left-side div
+{
+    margin: 2rem 0 2rem 7rem;
+}
+.contact-box .left-side .address span:nth-child(1),
+.contact-box .left-side .email span:nth-child(1),
+.contact-box .left-side .mobile span:nth-child(1)
+{
+    width: 50px;
+    height: 50px;
+    background: var(--mainColor);
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+.contact-box .left-side .address span:nth-child(1) i,
+.contact-box .left-side .email span:nth-child(1) i,
+.contact-box .left-side .mobile span:nth-child(1) i
+{
+    line-height: 50px;
+    color: var(--whiteColor)
+}
+.contact-box .left-side .address span:nth-child(2),
+.contact-box .left-side .email span:nth-child(2),
+.contact-box .left-side .mobile span:nth-child(2)
+{
+    text-transform: capitalize;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--lightTwo)
+}
+.contact-box .left-side .email span:nth-child(2)
+{
+    text-transform: lowercase;
+}
+.contacts .conatiner .right-side .contact-from
+{
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    color: var(--mainColor);
+}
+.contacts .conatiner .right-side .contact-from h2
+{
+    text-transform: capitalize;
+}
+.contact-from .input-box
+{
+    margin: 3rem 0 2rem 0;
+    height: 50px;
+    /* background-color:#45424b; */
+    position: relative;
+    width: 100%;
+}
+
+.contact-from .input-box input
+{
+    width: 100%;
+    height: 50px;
+    padding: 0 1rem;
+    border:none;
+    outline:none;
+    border-bottom: 3px solid var(--darkOne);
+    background: transparent;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+.contact-from .input-box input::placeholder
+{
+    text-transform: capitalize;
+    color: var(--darkOne);
+    font-size: 1.2rem;
+}
+.contact-from .btn
+{
+    padding: 1rem 2rem;
+}
+.contact-from .btn input
+{
+    width: 100px;
+    height: 50px;
+    background: var(--mainColor);
+    text-transform: uppercase;
+    font-family: monospace;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 1.02rem;
+    letter-spacing: 2px;
+}
+/* End contacts CSS */
+
+
+
+
+
+@media screen and (max-width: 950px) {
+    label{display: block;}
+    nav ul{
+        display: block;
+        position: fixed;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: var(--darkOne);
+        top: 48px;
+        text-align: center;
+        transition: right 0.5s;
+        z-index: 1;
+    }
+    nav ul li a
+    {
+        padding: 1.2rem 0;
+        display: block;
+        font-size: 1.1rem;
+        font-family: monospace;
+    }
+    nav ul li:nth-child(1) a,
+    nav ul li a:hover
+    {
+        color: var(--mainColor);
+    }
+    #bar:checked +  nav ul
+    {
+        right: 0;
+    }
+
+    /* Responsive Content */
+    .content .container
+    {
+        display: block;
+    }
+    .content .container .left-side
+    {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .content .container .left-side h1
+    {
+        text-align: center;
+    }
+    .content .container .left-side .btn
+    {
+        text-align: center;
+    }
+
+    /* End  Responsive Content */
+    /* Start Testomonials Responsive */
+
+    .testomonials-box
+    {
+        display: block;
+    }
+    .testomonials-card
+    {
+        width: 100%;
+    }
+    .testomonials-card .testomonials-card-body p
+    {
+        text-align: center;
+    }
+    /* End Testomonials Responsive */
+
+    /* End about Responsive */
+
+    .about-box
+    {
+        display: block;
+    }
+    .about-box .left-side h1
+    {
+        text-align: center;
+    }
+    .about-box .left-side p
+    {
+        text-align: justify;
+    }
+    /* End about Responsive */
+    .contact-box
+    {
+        display: block;
+    }
+    .contacts .conatiner .right-side .contact-from
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contact-from .input-box
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+        /* .btn
+        {
+            display: block;
+        }
+        .btn a
+        {
+            margin: 4rem auto;
+        } */
+        .content .container .left-side .btn a
+        {
+            margin: 1rem auto;
+        }
+        .gallery-box
+        {
+            display: block;
+        }
+        .gallery .container
+        {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery-item
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .gallery-item img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .contact-box .left-side
+        {
+            width: 100%;
+        }
+        .contact-box .left-side div
+        {
+            margin: 1rem auto;
+            display: block;
+            padding-left: 1rem;
+        }
+
+        .contact-box .left-side .address span:nth-child(1),
+        .contact-box .left-side .email span:nth-child(1),
+        .contact-box .left-side .mobile span:nth-child(1)
+        {
+            display: block;
+            text-align: center;
+        }
+}
